@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logout Successful</title>
+</head>
+<body>
+    <h2>Logout YES</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, a! Vero praesentium repellendus nostrum. Fugit quas saepe, modi sapiente dolor alias! Amet pariatur repellat est deserunt fuga nostrum sit inventore?</p>
+
+    <button type="button" class="btn-logout" action="/logout" method="get" onclick="logout()">logout</button>
+</body>
+
+<script>
+    //ใส่หน้ากราฟ เปลี่ยน index.html เป็น home.html
+    function logout(){
+        localStorage.clear();
+        location.href='./index.html'
+    }
+</script>
+
+
+</html>
